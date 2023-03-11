@@ -1,0 +1,57 @@
+﻿<Page x:Class="SaveData.LaborBookDataGrid"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SaveData"
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LaborBookDataGrid">
+
+    <Grid>
+    <DataGrid x:Name="laborBookDataGrid" Grid.Row="5" RowStyle="{DynamicResource DataGridRowStyle}" ColumnHeaderStyle="{DynamicResource DataGridColumnHeaderStyle}" CellStyle="{DynamicResource DataGridCellStyle}" Style="{DynamicResource DataGridStyle}" Grid.ColumnSpan="2">
+        <DataGrid.Columns>
+            <DataGridCheckBoxColumn CanUserResize="False" Width="auto">
+                <DataGridCheckBoxColumn.HeaderTemplate>
+                    <DataTemplate>
+                        <CheckBox/>
+                    </DataTemplate>
+                </DataGridCheckBoxColumn.HeaderTemplate>
+            </DataGridCheckBoxColumn>
+
+            <DataGridTextColumn Header="#" IsReadOnly="True" CanUserResize="False" Width="auto" Binding="{Binding Код_трудовой_книги}"/>
+
+            <DataGridTemplateColumn Header="Табельный номер" IsReadOnly="True" Width="auto">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                                <TextBlock Text="{Binding Табельный_номер}" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+            <DataGridTextColumn Header="Отдел" IsReadOnly="True" CanUserResize="False" Width="auto" Binding="{Binding Наименование_отдела}"/>
+            <DataGridTextColumn Header="Должность" IsReadOnly="True" CanUserResize="False" Width="auto" Binding="{Binding Наименование_должности}"/>
+            <DataGridTextColumn Header="Примечание" IsReadOnly="True" CanUserResize="False" Width="*" Binding="{Binding Примечание}"/>
+            <DataGridTextColumn Header="Дата начала" IsReadOnly="True" CanUserResize="False" Width="*" Binding="{Binding Дата_начала, StringFormat=\{0:dd.MM.yyyy\}}"/>
+            <DataGridTextColumn Header="Дата окончания" IsReadOnly="True" CanUserResize="False" Width="*" Binding="{Binding Дата_окончания, StringFormat=\{0:dd.MM.yyyy\}}"/>
+
+            <DataGridTemplateColumn Header="Операции" CanUserResize="False" IsReadOnly="True" Width="95">
+                <DataGridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Button Style="{StaticResource gridEditButton}" Click="ButtonEdit_Click">
+                                <Icon:PackIconMaterial Kind="PencilOutline" Style="{StaticResource gridButtonIcon}"/>
+                            </Button>
+                                <Button Style="{StaticResource gridRemoveButton}" Margin="2" Click="ButtonRemove_Click">
+                                <Icon:PackIconMaterial Kind="DeleteOutline" Style="{StaticResource gridButtonIcon}"/>
+                            </Button>
+                        </StackPanel>
+                    </DataTemplate>
+                </DataGridTemplateColumn.CellTemplate>
+            </DataGridTemplateColumn>
+        </DataGrid.Columns>
+    </DataGrid>
+    </Grid>
+</Page>

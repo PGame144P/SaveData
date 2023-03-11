@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3c4e9b366d5e49598968d8beab7932fb" Name="Diagram1">
+        <EntityTypeShape EntityType="SaveDataModel.sysdiagram" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Должности" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Начисление_ЗП" Width="1.5" PointX="7.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Отделы" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Пользователи" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Сотрудники" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Трудовая_книга" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.ТрудоваяКнигаView" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Трудовые_договоры" Width="1.5" PointX="7.5" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.ТрудовыеДоговорыView" Width="1.5" PointX="8.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SaveDataModel.Штатное_расписание" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <AssociationConnector Association="SaveDataModel.FK_Трудовая_книга_Должности" ManuallyRouted="false" />
+        <AssociationConnector Association="SaveDataModel.FK_Штатное_расписание_Должности" ManuallyRouted="false" />
+        <AssociationConnector Association="SaveDataModel.FK_Начисление_ЗП_Сотрудники" ManuallyRouted="false" />
+        <AssociationConnector Association="SaveDataModel.FK_Трудовая_книга_Отделы" ManuallyRouted="false" />
+        <AssociationConnector Association="SaveDataModel.FK_Штатное_расписание_Отделы" ManuallyRouted="false" />
+        <AssociationConnector Association="SaveDataModel.FK_Договоры_Сотрудники" ManuallyRouted="false" />
+        <AssociationConnector Association="SaveDataModel.FK_Сотрудники_Трудовая_книга" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
