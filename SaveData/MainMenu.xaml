@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SaveData"
         mc:Ignorable="d"
         xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
-        Title="MainMenu" Height="1000" Width="1600" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent" Language="ru-RU" ResizeMode="CanResizeWithGrip">
+        Title="MainMenu" Height="720" Width="1280" WindowStartupLocation="CenterScreen" WindowStyle="None" AllowsTransparency="True" Background="Transparent" Language="ru-RU" ResizeMode="CanResizeWithGrip">
 
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="BoolToVis"/>
@@ -50,7 +50,7 @@
         </Style>
     </Window.Resources>
 
-    <Border Background="White" CornerRadius="30" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
+    <Border Background="#272c39" MouseDown="Border_MouseDown" MouseLeftButtonDown="Border_MouseLeftButtonDown">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="220"/>
@@ -65,17 +65,15 @@
                 </Grid.RowDefinitions>
 
                 <Button Margin="20 28 0 35" Style="{StaticResource topButton}">
-                    <Icon:PackIconMaterial Kind="Menu" Width="15" Height="15"/>
+                    <Icon:PackIconMaterial Kind="Menu" Width="20" Height="20"/>
                 </Button>
 
-                <Border Grid.Row="1" Background="#7fc7ff" CornerRadius="0 50 0 30">
+                <Border Grid.Row="1" Background="#FFF0D500">
                     <DockPanel>
-                        <TextBlock Text="Управление персоналом" TextWrapping="Wrap" Foreground="Black" FontSize="22" FontWeight="SemiBold"
-                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
-                        <TextBlock Text="Главное меню" Foreground="Black" FontSize="14" FontWeight="SemiBold"
-                                   DockPanel.Dock="Top" TextAlignment="Center"/>
+                        <TextBlock Text="SaveData" TextWrapping="Wrap" Foreground="#272c39" FontSize="22" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10" Height="32"/>
 
-                        <Separator Margin="25" DockPanel.Dock="Top" Height="0.8" Background="White"/>
+                        <Separator Margin="0" DockPanel.Dock="Top" Height="0.8" Background="#272c39"/>
 
                         <StackPanel x:Name="mainMenu" DockPanel.Dock="Top">
 
@@ -166,7 +164,7 @@
 
                 <!--PageTitle-->
                 <TextBlock x:Name="pageTitle" Text="Сотрудники" Grid.Row="1" FontSize="32" FontWeight="SemiBold" Margin="0 20 0 0"
-                           HorizontalAlignment="Left" Foreground="Black"/>
+                           HorizontalAlignment="Left" Foreground="White"/>
 
                 <!--AddButton-->
                 <Button Style="{StaticResource addButton}" Grid.ColumnSpan="5" Click="ButtonAddRecord_Click">

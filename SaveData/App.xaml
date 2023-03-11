@@ -311,8 +311,8 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#4db2ff"/>
-                    <Setter Property="Foreground" Value="#ffffff"/>
+                    <Setter Property="Background" Value="#272c39"/>
+                    <Setter Property="Foreground" Value="#FFF0D500"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -325,8 +325,8 @@
         </Style>
 
         <Style x:Key="textboxSearch" TargetType="{x:Type TextBox}">
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="Foreground" Value="#b0b9c6"/>
+            <Setter Property="Background" Value="#272c39"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="Padding" Value="15 10"/>
@@ -357,8 +357,8 @@
         </Style>
 
         <Style x:Key="addButton" TargetType="{x:Type Button}">
-            <Setter Property="Background" Value="#4db2ff"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#FFF0D500"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="Width" Value="150"/>
             <Setter Property="Height" Value="35"/>
@@ -379,8 +379,8 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#199cff"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#272c39"/>
+                    <Setter Property="Foreground" Value="#FFF0D500"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
@@ -420,13 +420,13 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#199cff"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FFF0D500"/>
+                    <Setter Property="Foreground" Value="#272c39"/>
                 </Trigger>
 
                 <Trigger Property="IsSelected" Value="True">
-                    <Setter Property="Background" Value="#199cff"/>
-                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="Background" Value="#FFF0D500"/>
+                    <Setter Property="Foreground" Value="#272c39"/>
                 </Trigger>
 
                 <MultiTrigger>
@@ -562,8 +562,8 @@
         </Style>
 
         <Style x:Key="gridEditButton" TargetType="Button">
-            <Setter Property="Background" Value="#4db2ff"/>
-            <Setter Property="BorderBrush" Value="#199cff"/>
+            <Setter Property="Background" Value="#FFF0D500"/>
+            <Setter Property="BorderBrush" Value="#199cF1"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="FontSize" Value="13"/>
@@ -580,7 +580,7 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#80c8ff"/>
+                    <Setter Property="Background" Value="#272c39"/>
                 </Trigger>
             </Style.Triggers>
             
@@ -685,7 +685,7 @@
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
             <Setter Property="ScrollViewer.CanContentScroll" Value="True"/>
-            <Setter Property="TextElement.Foreground" Value="Black"/>
+            <Setter Property="TextElement.Foreground" Value="#272c39"/>
             <Setter Property="FrameworkElement.FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="FontSize" Value="28"/>
             <Setter Property="Height" Value="40"/>
