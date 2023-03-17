@@ -79,57 +79,43 @@
 
                             <Button Style="{StaticResource menuButton}" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="AccountMultipleOutline" Style="{StaticResource menuButtonIcon}"/>
+                                    <Icon:PackIconMaterial Kind="AccountBoxMultiple" Style="{StaticResource menuButtonIcon}"/>
                                     <TextBlock Text="Сотрудники"/>
                                 </StackPanel>
                             </Button>
 
                             <Button Style="{StaticResource menuButton}" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="CalendarClock" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Штатное расписание"/>
+                                    <Icon:PackIconMaterial Kind="ExclamationThick" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Уровень опастности"/>
                                 </StackPanel>
                             </Button>
 
                             <Button Style="{StaticResource menuButton}" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="SelectionMultiple" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Отделы"/>
+                                    <Icon:PackIconMaterial Kind="ApplicationEdit" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Программы"/>
                                 </StackPanel>
                             </Button>
 
                             <Button Style="{StaticResource menuButton}" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="BookAccount" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Трудовая книга"/>
+                                    <Icon:PackIconMaterial Kind="DesktopTower" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Компьютеры"/>
                                 </StackPanel>
                             </Button>
 
                             <Button Style="{StaticResource menuButton}" Click="Button_Click">
                                 <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="FileDocument" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Трудовые договоры"/>
-                                </StackPanel>
-                            </Button>
-
-                            <Button Style="{StaticResource menuButton}" Click="Button_Click">
-                                <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="AccountHardHat" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Должности"/>
-                                </StackPanel>
-                            </Button>
-
-                            <Button Style="{StaticResource menuButton}" Click="Button_Click">
-                                <StackPanel Orientation="Horizontal">
-                                    <Icon:PackIconMaterial Kind="Cash" Style="{StaticResource menuButtonIcon}"/>
-                                    <TextBlock Text="Начисление ЗП"/>
+                                    <Icon:PackIconMaterial Kind="ListStatus" Style="{StaticResource menuButtonIcon}"/>
+                                    <TextBlock Text="Статус техники"/>
                                 </StackPanel>
                             </Button>
 
                         </StackPanel>
                         <Button Style="{StaticResource menuButton}" VerticalAlignment="Bottom" DockPanel.Dock="Bottom" Margin="15 0 15 20" Click="ButtonLogout_Click">
                             <StackPanel Orientation="Horizontal">
-                                <Icon:PackIconMaterial Kind="Logout" Style="{StaticResource menuButtonIcon}"/>
+                                <Icon:PackIconMaterial Kind="ExitRun" Style="{StaticResource menuButtonIcon}"/>
                                 <TextBlock Text="Выйти из аккаунта"/>
                             </StackPanel>
                         </Button>

@@ -21,23 +21,19 @@ namespace SaveData
         private Dictionary<string, string> pages = new Dictionary<string, string>
             {
                 {"Сотрудники", "SaveDataGrid.xaml"},
-                {"Штатное расписание", "ScheduleDataGrid.xaml"},
-                {"Отделы", "DepartmentsDataGrid.xaml"},
-                {"Трудовая книга", "LaborBookDataGrid.xaml"},
-                {"Трудовые договоры", "EmploymentContractDataGrid.xaml"},
-                {"Должности", "PositionsDataGrid.xaml"},
-                {"Начисление ЗП", "PaymentsDataGrid.xaml"},
+                {"Уровень опастности", "DepartmentsDataGrid.xaml"},
+                {"Программы", "LaborBookDataGrid.xaml"},
+                {"Компьютеры", "EmploymentContractDataGrid.xaml"},
+                {"Статус техники", "PositionsDataGrid.xaml"},
             };
 
         private Dictionary<string, string> addPages = new Dictionary<string, string>
             {
                 {"Сотрудники", "SaveAddPage.xaml"},
-                {"Штатное расписание", "ScheduleAddPage.xaml"},
-                {"Отделы", "DepartmentsAddPage.xaml"},
-                {"Трудовая книга", "LaborBookAddPage.xaml"},
-                {"Трудовые договоры", "EmploymentContractAddPage.xaml"},
-                {"Должности", "PositionsAddPage.xaml"},
-                {"Начисление ЗП", "PaymentsAddPage.xaml"},
+                {"Уровень опастности", "DepartmentsAddPage.xaml"},
+                {"Программы", "LaborBookAddPage.xaml"},
+                {"Компьютеры", "EmploymentContractAddPage.xaml"},
+                {"Статус техники", "PositionsAddPage.xaml"},
             };
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
