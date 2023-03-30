@@ -9,9 +9,6 @@
 
 namespace SaveData
 {
-    using System;
-    using System.Collections.Generic;
-    
     public partial class ТрудоваяКнигаView
     {
         public int Код_трудовой_книги { get; set; }

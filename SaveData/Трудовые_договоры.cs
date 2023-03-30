@@ -9,9 +9,6 @@
 
 namespace SaveData
 {
-    using System;
-    using System.Collections.Generic;
-    
     public partial class Трудовые_договоры
     {
         public int Код_договора { get; set; }

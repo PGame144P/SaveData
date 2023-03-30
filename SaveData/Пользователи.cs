@@ -9,9 +9,6 @@
 
 namespace SaveData
 {
-    using System;
-    using System.Collections.Generic;
-    
     public partial class Пользователи
     {
         public int Код_пользователя { get; set; }

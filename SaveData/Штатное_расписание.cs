@@ -9,9 +9,6 @@
 
 namespace SaveData
 {
-    using System;
-    using System.Collections.Generic;
-    
     public partial class Штатное_расписание
     {
         public int Код_расписания { get; set; }

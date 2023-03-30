@@ -5,7 +5,6 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-
 namespace SaveData
 {
     public partial class MainMenu : Window
@@ -25,6 +24,7 @@ namespace SaveData
                 {"Программы", "LaborBookDataGrid.xaml"},
                 {"Компьютеры", "EmploymentContractDataGrid.xaml"},
                 {"Статус техники", "PositionsDataGrid.xaml"},
+                {"Справка", "Help.xaml"},
             };
 
         private Dictionary<string, string> addPages = new Dictionary<string, string>
@@ -34,6 +34,7 @@ namespace SaveData
                 {"Программы", "LaborBookAddPage.xaml"},
                 {"Компьютеры", "EmploymentContractAddPage.xaml"},
                 {"Статус техники", "PositionsAddPage.xaml"},
+                {"Справка", "Help.xaml"},
             };
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

@@ -7,11 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System;
+
 namespace SaveData
 {
-    using System;
-    using System.Collections.Generic;
-    
     public partial class Начисление_ЗП
     {
         public int Код_начисления { get; set; }
