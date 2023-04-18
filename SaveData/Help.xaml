@@ -7,11 +7,14 @@
       mc:Ignorable="d"
       Title="Help" Height="450" Width="800">
     <Grid Background="#272c39">
-        <TextBlock Text="Данная программа предназначена для мониторинга и предупреждения угроз. " Style="{StaticResource TitleText}" Foreground="White" Margin="-2,25,0,382" FontSize="18" HorizontalAlignment="Left" Width="662" FontWeight="Normal"/>
-        <TextBlock Text="Осуществляя выше указанные действия путем предупреждения и информирования о " Style="{StaticResource TitleText}" Foreground="White" Margin="-1,61,0,346" FontSize="18" HorizontalAlignment="Left" Width="719" FontWeight="Normal"/>
-        <TextBlock Text="средствах противодействия данным угрозам." Style="{StaticResource TitleText}" Foreground="White" Margin="-46,101,0,306" FontSize="18" HorizontalAlignment="Left" Width="466" FontWeight="Normal"/>
-        <TextBlock Text="Главная навигацонная единица програмы это меню, в котором при помощи кнопок," Style="{StaticResource TitleText}" Foreground="White" Margin="-2,164,0,243" FontSize="18" HorizontalAlignment="Left" Width="709" FontWeight="Normal"/>
-        <TextBlock Text="пользователь может перемещаться по программе, выбираяя необходимый раздел." Style="{StaticResource TitleText}" Foreground="White" Margin="-8,203,0,204" FontSize="18" HorizontalAlignment="Left" Width="708" FontWeight="Normal"/>
-        <TextBlock Text="Для возврата к прдущему разделу, необходимно нажать соответствующую кнопку" Style="{StaticResource TitleText}" Foreground="White" Margin="-11,243,0,164" FontSize="18" HorizontalAlignment="Left" Width="709" FontWeight="Normal"/>
+        <StackPanel Margin="13,14,20,20">
+            <TextBlock Text="Предназначение программы:" FontSize="24" FontWeight="Bold" Margin="0 10 0 5" Foreground="White" Height="28"/>
+            <TextBlock Text="Данное приложение разработано для защиты информации на металлургических предприятиях от несанкционированного доступа. Оно включает в себя набор инструментов и справочных материалов для определения и устранения уязвимостей информационных систем предприятия." 
+                 TextWrapping="Wrap" Foreground="White" FontSize="20"/>
+
+            <TextBlock Text="Управление программой:" FontSize="24" FontWeight="Bold" Margin="0 10 0 5" Foreground="White"/>
+            <TextBlock Text="Программа имеет интуитивно понятный интерфейс управления. Для начала работы необходимо зарегистрировать учетную запись и войти в систему. Затем на главной странице доступны различные функции, такие как анализ уязвимостей системы, мониторинг активности компьютеров и т.д. Каждая функция имеет подробное описание в разделе «Справка» в меню программы." 
+                 TextWrapping="Wrap" Foreground="White" FontSize="20"/>
+        </StackPanel>
     </Grid>
 </Page>
